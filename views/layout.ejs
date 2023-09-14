@@ -1,0 +1,38 @@
+<!-- views/layout.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeamUp</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+    <h1><%= appName %></h1>
+        <nav>
+            
+    <% 
+    function transformColumn(column) {
+        return column.replace(/_/g, ' ')   // Replace underscores with spaces
+                    .replace(/\w\S*/g, function(txt) { // Capitalize first letter of each word
+                        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
+    }
+    %>
+            <% tables.forEach(table => { %>
+                <button onclick="window.location = '/<%= table %>'">
+                <%= transformColumn(table) %>
+                </button>
+            <% }) %>
+
+        </nav>
+    </header>
+
+    <main>
+        <%- body %>
+    </main>
+
+    <footer>
+        <!-- Footer items go here -->
+    </footer>
+</body>
+</html>
