@@ -1,0 +1,20 @@
+{
+  "name": "wbench",
+  "version": "1.0.0",
+  "description": "rapid prototyping tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick227/node-generic-workbench.git"
+  },
+  "author": "nrios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nick227/node-generic-workbench/issues"
+  },
+  "homepage": "https://github.com/nick227/node-generic-workbench#readme"
+}
