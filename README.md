@@ -1,10 +1,12 @@
 # node-generic-workbench
 
-Rapid setup of web-based workbench for tables defined in db/tables.
+Rapid web-based workbench.
 
 Uses EJS to render ui and saves new items to MySQL type data store.
 
 Get Started:
-  Define app.js and tables.js to match your database
-  Create .env file with database variables
-  Run npm start
+<ul>
+  <li>Define app.js and tables.js to fit your project</li>
+  <li>Create .env file with database parameters</li>
+  <li>Run npm start</li>
+  </ul>
